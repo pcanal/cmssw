@@ -26,7 +26,7 @@ namespace edm {
     struct Emplace {};
 
     WrapperBase();
-    ~WrapperBase() override;
+    ~WrapperBase() override {};
     bool isPresent() const { return isPresent_(); }
 
     // We have to use vector<void*> to keep the type information out

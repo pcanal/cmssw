@@ -80,7 +80,7 @@ namespace reco {
     }
 
     /// destructor
-    ~LeafCandidate() override;
+    ~LeafCandidate() override {};
     /// number of daughters
     size_t numberOfDaughters() const override;
     /// return daughter at a given position (throws an exception)
@@ -298,7 +298,7 @@ namespace reco {
 
   private:
     /// check overlap with another Candidate
-    bool overlap(const Candidate&) const override;
+    bool overlap(const Candidate&) const override { return false; };
     template <typename, typename, typename>
     friend struct component;
     friend class ::OverlapChecker;

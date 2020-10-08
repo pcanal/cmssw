@@ -19,7 +19,7 @@
 class ExceptionHandler : public G4VExceptionHandler {
 public:
   explicit ExceptionHandler();
-  ~ExceptionHandler() override;
+  ~ExceptionHandler() override {};
 
   int operator==(const ExceptionHandler &right) const { return (this == &right); }
   int operator!=(const ExceptionHandler &right) const { return (this != &right); }

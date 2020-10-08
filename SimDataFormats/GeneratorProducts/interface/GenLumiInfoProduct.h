@@ -18,7 +18,7 @@ public:
   GenLumiInfoProduct();
   GenLumiInfoProduct(const int id);
   GenLumiInfoProduct(const GenLumiInfoProduct &other);
-  virtual ~GenLumiInfoProduct();
+  virtual ~GenLumiInfoProduct() {};
 
   // getters
 
@@ -158,9 +158,9 @@ public:
   };
 
   // methods used by EDM
-  virtual bool mergeProduct(const GenLumiInfoProduct &other);
+  //virtual bool mergeProduct(const GenLumiInfoProduct &other);
   void swap(GenLumiInfoProduct &other);
-  virtual bool isProductEqual(const GenLumiInfoProduct &other) const;
+  //virtual bool isProductEqual(const GenLumiInfoProduct &other) const;
 
 private:
   // cross sections

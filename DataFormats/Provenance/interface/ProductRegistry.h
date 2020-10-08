@@ -181,7 +181,7 @@ namespace edm {
 
     void checkForDuplicateProcessName(BranchDescription const& desc, std::string const* processName) const;
 
-    virtual void addCalled(BranchDescription const&, bool iFromListener);
+    virtual void addCalled(BranchDescription const&, bool iFromListener) {};
     void throwIfNotFrozen() const;
     void throwIfFrozen() const;
 

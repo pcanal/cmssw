@@ -41,7 +41,7 @@ namespace edm {
   class EDProductGetter {
   public:
     EDProductGetter();
-    virtual ~EDProductGetter();
+    virtual ~EDProductGetter() {};
 
     EDProductGetter(EDProductGetter const&) = delete;  // stop default
 

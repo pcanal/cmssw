@@ -14,7 +14,7 @@ public:
   // constructors, destructors
   LHEXMLStringProduct();
   LHEXMLStringProduct(const std::string& content);
-  virtual ~LHEXMLStringProduct();
+  ~LHEXMLStringProduct();
 
   // getters
   const std::vector<std::string>& getStrings() const { return content_; }

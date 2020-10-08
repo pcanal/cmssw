@@ -72,8 +72,8 @@ public:
 
   bool sameCluster(OmniClusterRef const& oh) const { return oh == cluster_; }
 
-  std::vector<const TrackingRecHit*> recHits() const override;
-  std::vector<TrackingRecHit*> recHits() override;
+  std::vector<const TrackingRecHit*> recHits() const override { };
+  std::vector<TrackingRecHit*> recHits() override {};
 
 private:
   // new game

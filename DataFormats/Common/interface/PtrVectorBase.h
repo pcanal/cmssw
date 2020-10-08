@@ -41,7 +41,7 @@ namespace edm {
 
     PtrVectorBase(const PtrVectorBase&);
 
-    virtual ~PtrVectorBase();
+    virtual ~PtrVectorBase() {};
 
     // ---------- const member functions ---------------------
     /// Checks for null

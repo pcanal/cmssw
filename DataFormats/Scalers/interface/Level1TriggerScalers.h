@@ -34,7 +34,7 @@ public:
 
   Level1TriggerScalers();
   Level1TriggerScalers(const unsigned char* rawData);
-  virtual ~Level1TriggerScalers();
+  virtual ~Level1TriggerScalers() {};
 
   /// name method
   std::string name() const { return "Level1TriggerScalers"; }

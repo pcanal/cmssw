@@ -13,7 +13,7 @@ namespace edm {
   class ViewTypeChecker {
   public:
     ViewTypeChecker();
-    virtual ~ViewTypeChecker();
+    virtual ~ViewTypeChecker() {};
 
     std::type_info const& valueTypeInfo() const { return valueTypeInfo_(); }
     std::type_info const& memberTypeInfo() const { return memberTypeInfo_(); }

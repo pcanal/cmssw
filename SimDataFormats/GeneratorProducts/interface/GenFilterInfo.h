@@ -15,7 +15,7 @@ public:
   GenFilterInfo(unsigned int, unsigned int);  // obsolete, should be avoided for new classes
   GenFilterInfo(unsigned int, unsigned int, unsigned int, unsigned int, double, double, double, double);
   GenFilterInfo(const GenFilterInfo&);
-  virtual ~GenFilterInfo();
+  virtual ~GenFilterInfo() {};
 
   // getters
   unsigned int numEventsTried() const { return (numTotalPositiveEvents_ + numTotalNegativeEvents_); }

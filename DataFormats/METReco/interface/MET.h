@@ -49,7 +49,7 @@ namespace reco {
         const Point& vtx_,
         bool isWeighted = false);
 
-    MET* clone() const override;
+    MET* clone() const override { return nullptr; };
 
     //________________________________________________________________________||
     //scalar sum of transverse energy over all objects

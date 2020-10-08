@@ -11,7 +11,7 @@
 class CSCRecHit2DValidation : public CSCBaseValidation {
 public:
   CSCRecHit2DValidation(const edm::InputTag &inputTag, edm::ConsumesCollector &&iC);
-  ~CSCRecHit2DValidation() override;
+  ~CSCRecHit2DValidation() override {};
   void bookHistograms(DQMStore::IBooker &);
   void analyze(const edm::Event &, const edm::EventSetup &) override;
 

@@ -48,7 +48,7 @@ public:
   L1MuGMTReadoutRecord(int bxie);
 
   /// destructor
-  virtual ~L1MuGMTReadoutRecord();
+  virtual ~L1MuGMTReadoutRecord() {};
 
   /// reset the record
   void reset();

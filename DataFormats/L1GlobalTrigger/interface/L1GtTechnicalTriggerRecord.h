@@ -31,7 +31,7 @@ public:
   L1GtTechnicalTriggerRecord();
 
   /// destructor
-  virtual ~L1GtTechnicalTriggerRecord();
+  virtual ~L1GtTechnicalTriggerRecord() {};
 
 public:
   /// return the technical trigger for ttName and bxInEvent

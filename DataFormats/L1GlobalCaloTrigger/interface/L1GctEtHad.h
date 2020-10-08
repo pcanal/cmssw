@@ -28,7 +28,7 @@ public:
   L1GctEtHad(uint16_t rawData, int16_t bx);
   L1GctEtHad(unsigned et, bool oflow);
   L1GctEtHad(unsigned et, bool oflow, int16_t bx);
-  virtual ~L1GctEtHad();
+  virtual ~L1GctEtHad() {};
 
   /// name method
   std::string name() const { return "EtHad"; }

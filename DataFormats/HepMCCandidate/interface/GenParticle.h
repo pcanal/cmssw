@@ -29,7 +29,7 @@ namespace reco {
     /// constrocturo from values
     GenParticle(Charge q, const PolarLorentzVector &p4, const Point &vtx, int pdgId, int status, bool integerCharge);
     /// destructor
-    ~GenParticle() override;
+    ~GenParticle() override {};
     /// return a clone
     GenParticle *clone() const override;
     void setCollisionId(int s) { collisionId_ = s; }

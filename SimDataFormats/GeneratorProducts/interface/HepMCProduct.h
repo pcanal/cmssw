@@ -20,7 +20,7 @@ namespace edm {
     HepMCProduct() : evt_(nullptr), isVtxGenApplied_(false), isVtxBoostApplied_(false), isPBoostApplied_(false) {}
 
     explicit HepMCProduct(HepMC::GenEvent *evt);
-    virtual ~HepMCProduct();
+    virtual ~HepMCProduct() {};
 
     void addHepMCData(HepMC::GenEvent *evt);
 
